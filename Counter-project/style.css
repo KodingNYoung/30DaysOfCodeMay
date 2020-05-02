@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body{
+    background-image: url(cool-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+}
+/* for the counter conatiner */
+.counter{
+    width: 20%;
+    min-width: 200px;
+    margin: 10% auto;
+    border: 1px solid #f5f5f5;
+    padding: 30px;
+    text-align: center;
+    box-shadow:
+    1px 1px 10px 3px rgb(0, 0, 0);
+}
+/* styling the head*/
+.heading{
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-size: 35px;
+}
+/* the number */
+.count{
+    font-size: 100px;
+    font-family: fantasy;
+}
+/* the 2 buttons */
+button{
+    display: block;
+    margin:10px auto;
+    padding: 10px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+/* coloring the decrease button */
+.subtract{
+    background-color: tomato;
+    box-shadow: 0 0 5px 3px coral;
+}
+/* coloring the increase button */
+.add{
+    background-color: green;
+    box-shadow: 0 0 5px 3px green;
+}
+/* when the buttons are hovered over*/
+button:hover{
+    background-color: rgb(73, 73, 150);
+    color: white;
+    box-shadow: none;
+}
