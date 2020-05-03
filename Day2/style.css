@@ -1,0 +1,16 @@
+body{
+    width: 90%;
+    margin: 10% auto;
+    text-align: center;
+    background-color: #efefef;
+}
+.heading{
+    color: #efefef;
+    font-size: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#canvas{
+    
+    background-color: #333;
+    border-radius: 5px;
+}
