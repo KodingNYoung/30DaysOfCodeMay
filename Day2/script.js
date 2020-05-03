@@ -13,7 +13,8 @@ function setUpCanvas(){
     clock = canvas.getContext("2d");
 
     // set dimensions
-    canvas.width = canvas.height = 450;
+    canvas.width = window.innerWidth;
+    canvas.height = 450;
 
     // update clock every 1 secs
     setInterval(UpdateClock, 1000);
