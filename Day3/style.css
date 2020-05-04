@@ -1,0 +1,129 @@
+#card-BMI{
+    width: 90%;
+    min-width: 250px;
+    max-width: 500px;
+    margin: 10% auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading{
+    text-align: left;
+    text-transform: capitalize;
+}
+.preloader-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    display: none;
+}
+.labels{
+    width:100%;
+    display:grid;
+    grid-template-columns: 46% 16% 12.25% 25.75%;
+}
+.label{
+    font-weight: bold;
+    text-transform: capitalize;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.range-bar{
+    position: relative;
+    width:100%;
+    height: 50px;
+    display:grid;
+    grid-template-columns: 46% 16% 12.25% 25.75%;
+    grid-gap: 0;
+    margin: 0px 0 10px 0;
+}
+.class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.underweight{
+    background-color: blue;
+}
+.normal{
+    background-color: green;
+}
+.overweight{
+    background-color: yellow;
+}
+.obese{
+    background-color: red;
+}
+.value{
+    background: rgba(0, 247, 255, 0.603);
+    position: absolute;
+    height: 100%;
+    width: 0.5%;
+    border-right: 1px solid rgba(0, 247, 255);
+    transition: width 1s;
+}
+.message{
+    display: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#calculator-card{
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+.input-field{
+    width: 90%;
+    margin: 10px auto;
+}
+.input-field label{
+    font-weight: bolder;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.input-row{
+    border:1px solid #ccc;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    height: 30px;
+}
+.input-row input{
+    border: none;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+.text__align-right{
+    border-radius: 3px;
+    border-left:1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.btn-container{
+    width: 90%;
+    margin: 20px auto;
+}
+#btn{
+    width: 50%;
+    padding: 8px 0;
+    background-color: #0f0f0f;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+}
+#btn:active{
+    background-color: #646464;
+    border: 1px solid #646464;
+}
+
+/* JS style */
+.error{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: red;
+}

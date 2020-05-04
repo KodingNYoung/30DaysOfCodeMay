@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI calculator</title>
+</head>
+<body>
+    <div id="card-BMI">
+        <h1 class="heading">simple body mass index (BMI) calculator</h1>
+       <!-- range bar -->
+        <div class="labels">
+            <div class="label">under-weight</div>
+            <div class=" label">normal</div>
+            <div class="label">over-weight</div>
+            <div class="label">obese</div>
+        </div>
+        <div class="range-bar">
+            <div class="class underweight">0-18.4</div>
+            <div class=" class normal">18.5 - 24.9</div>
+            <div class="class overweight">25 -29.9</div>
+            <div class="class obese">30+</div>
+            <div class="value"></div>
+        </div>
+
+         <!-- preloader -->
+         <div class="preloader-container">
+            <img src="25.gif" alt="">
+        </div>
+
+        <!-- answer -->
+        <div class="message">
+            Your BMI is <span class="BMI-value"></span>, you are <span class="status"></span>
+        </div>
+
+        <!-- form -->
+        <form id="calculator-card">
+            <div class="input-field">
+                <label for="height">Height</label>
+                <div class="input-row">
+                    <input type="number" id="height" >
+                    <span class="text__align-right">(cm)</span>
+                </div>
+            </div>
+
+            <div class="input-field">
+                <label for="weight">Weight</label>
+                <div class="input-row">
+                    <input type="number" id="weight" >
+                    <span class="text__align-right">(kg)</span>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <input id="btn" type="submit" value="Calculate">
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

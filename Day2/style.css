@@ -1,6 +1,5 @@
 body{
     width: 90%;
-    margin: 10% auto;
     text-align: center;
     background-color: #333;
 }
@@ -10,5 +9,8 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #canvas{
+    margin: 10% auto;
+    border: 1px solid white;
     border-radius: 5px;
+    box-shadow: 1px 1px 7px 3px ;
 }
