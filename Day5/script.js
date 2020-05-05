@@ -110,41 +110,43 @@ function getTheTodos(){
 // create a list item
 function createListItem(){
     // check if there's anything to add
-    if (input.value==="") return;
+    if (input.value===""){
+        alert("Add an item!")
+    }else{
+        // else
+        let listItem= document.createElement("li");
+        
+        const textDiv = document.createElement("div");
+        const text = document.createElement("p");
+        const inputVal= document.createTextNode(input.value);
 
-    // else
-    let listItem= document.createElement("li");
+        text.appendChild(inputVal);
+        textDiv.appendChild(text);
     
-    const textDiv = document.createElement("div");
-    const text = document.createElement("p");
-    const inputVal= document.createTextNode(input.value);
 
-    text.appendChild(inputVal);
-    textDiv.appendChild(text);
- 
+        const iconDiv = document.createElement("div");
+        iconDiv.classList.add("icons");
 
-    const iconDiv = document.createElement("div");
-    iconDiv.classList.add("icons");
-
-    const checkIcon = document.createElement("i");
-    checkIcon.className = "far fa-check-circle";
-   
-    const editIcon = document.createElement("i");
-    editIcon.className = "far fa-edit";
+        const checkIcon = document.createElement("i");
+        checkIcon.className = "far fa-check-circle";
     
-    const deleteIcon = document.createElement("i");
-    deleteIcon.className="far fa-trash-alt";
+        const editIcon = document.createElement("i");
+        editIcon.className = "far fa-edit";
+        
+        const deleteIcon = document.createElement("i");
+        deleteIcon.className="far fa-trash-alt";
 
-    
-    appendChildren(iconDiv,[checkIcon,editIcon,deleteIcon]);
+        
+        appendChildren(iconDiv,[checkIcon,editIcon,deleteIcon]);
 
-    appendChildren(listItem,[textDiv,iconDiv]);
+        appendChildren(listItem,[textDiv,iconDiv]);
 
-    // storage to LS
-    storageToLocalStorage(input.value);
+        // storage to LS
+        storageToLocalStorage(input.value);
 
-    list.appendChild(listItem);
-    input.value = "";
+        list.appendChild(listItem);
+        input.value = "";
+    }
 }
 // append multiple childs
 function appendChildren(el,arr){
