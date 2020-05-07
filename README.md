@@ -9,3 +9,5 @@ Day 2: https://kodingnyoung.github.io/30DaysOfCodeMay/Day2/
 Day 3: https://kodingnyoung.github.io/30DaysOfCodeMay/Day3/
 
 Day 4: https://kodingnyoung.github.io/30DaysOfCodeMay/Day4/
+
+Day 5: https://kodingnyoung.github.io/30DaysOfCodeMay/Day5/

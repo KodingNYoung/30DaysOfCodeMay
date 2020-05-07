@@ -109,7 +109,7 @@ function getTheTodos(){
 }
 // create a list item
 function createListItem(){
-    // check if there's anything to add
+    // check if there's nothing to add
     if (input.value===""){
         alert("Add an item!");
     }else{
