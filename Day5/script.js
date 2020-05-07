@@ -111,7 +111,7 @@ function getTheTodos(){
 function createListItem(){
     // check if there's anything to add
     if (input.value===""){
-        alert("Add an item!")
+        alert("Add an item!");
     }else{
         // else
         let listItem= document.createElement("li");

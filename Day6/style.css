@@ -1,0 +1,114 @@
+body{
+    background-color: rgb(224, 224, 224);
+}
+#container{
+    width: 90%;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.notepad{
+    border: 2px solid rgba(101, 226, 43, 0.966);
+    padding:10px 20px;
+}
+.heading{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background-color: rgba(101, 226, 43, 0.966);
+    margin: 0;
+    padding: 20px 30px;
+    border-radius: 30px 30px 0 0;
+}
+#input-notes{
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 0px rgba(101, 226, 43, 0.966);
+
+}
+#topic{
+    width: 95%;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(101, 226, 43, 0.966);
+}
+#note{
+    width: 95%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid rgba(101, 226, 43, 0.966);
+    min-height: 70px;
+    padding: 5px 10px;
+}
+
+.submit-container{
+    margin: 0 auto;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+#submit-btn{
+    width: 100%;
+    padding: 7px 0;
+    background-color: rgba(101, 226, 43, 0.966);
+    border: 1px solid rgba(101, 226, 43, 0.966);
+    border-radius: 5px;
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+#note-card__container{
+    padding: 20px 0;
+    border-radius: 5px;
+    
+}
+.note-card{
+    position: relative;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 0px rgba(101, 226, 43, 0.966);
+}
+.topic-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.note-text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.delete-btn{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding:10px; 
+    color: red;
+    background-color: white;
+    border:none;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+}
+.delete-btn:hover{
+    color: white;
+    background-color: red;
+    border-radius: 0 5px;
+}
+.btn-container{
+    width: fit-content;
+    margin-left: auto;
+}
+.far{
+    color:rgba(101, 226, 43, 0.966);
+    font-size: 20px;
+    cursor: pointer;
+}
+.bottom{
+    border-radius: 0 0 30px 30px;
+    background-color: rgba(101, 226, 43, 0.966);
+    height: 20px;
+}

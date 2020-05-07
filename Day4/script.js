@@ -1,54 +1,26 @@
-// an array of objects having the quotes and author properties
-const quotes = [
-    {
-        quote:"Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
-        author:"- Martin Fowler"
-    },
-    {
-        quote:"First, solve the problem. Then, write the code.",
-        author: "– John Johnson"
-    },
-    {
-        quote: "Experience is the name everyone gives to their mistakes.",  
-        author: "– Oscar Wilde"
-    },
-    {
-        quote: "Java is to JavaScript what car is to Carpet.",
-        author: "- Chris Heilmann"
-    },
-    {   
-        quote: "Ruby is rubbish! PHP is phpantastic!",
-        author: "- Nikita Popov"
-    },
-    {
-        quote: "Code is like humor. When you have to explain it, it’s bad.",
-        author: "- Cory House"
-    },
-    {
-        quote: "Simplicity is the soul of efficiency.",
-        author:"- Austin Freeman"
-    },
-    {
-        quote:"Optimism is an occupational hazard of programming: feedback is the treatment.",
-        author:"- Kent Beck"
-    },
-    {
-        quote: "Before software can be reusable it first has to be usable.",
-        author: "– Ralph Johnson"
-    },
-    {
-        quote: "Talk is cheap. Show me the code.",  
-        author: "- Linus Torvalds"
-    },
-    {
-        quote: "Programs must be written for people to read, and only incidentally for machines to execute.",
-        author:"- Harold Abelson, Structure and Interpretation of Computer Programs"
-    }
-]
+let quotes;
 
+// an array of objects having the quotes and author properties
 document.addEventListener("DOMContentLoaded", function(){
-    //every 30 secs, change quote
-    setInterval(changeQuote, 30000);
+    // get the jokes in from quotes.json file
+    // instantiate an xhr object
+    const xhr = new XMLHttpRequest();
+
+    // initiate request
+    xhr.open("GET","quotes.json", true);
+
+    //onload what to do
+    xhr.onload = function (){
+        // if requested file is available
+        if (this.status === 200){
+            quotes = JSON.parse(this.responseText)
+            //every 30 secs, change quote
+            setInterval(changeQuote, 30000);
+        }
+    } 
+    xhr.send();
+    
+    
 })
 let currentNum =[];
 function changeQuote(){
