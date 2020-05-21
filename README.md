@@ -16,4 +16,4 @@ Day 6: https://kodingnyoung.github.io/30DaysOfCodeMay/Day6/
 
 Day 7: https://kodingnyoung.github.io/30DaysOfCodeMay/Day7/
 
-Day 15: https://kodingnyoung.github.io/30DaysOfCodeMay/Day15/
+Day 15: https://kodingnyoung.github.io/30DaysOfCodeMay/Day%2015/
